@@ -1,19 +1,20 @@
-import {useState} from 'react';
+import { useRef } from 'react';
+import '../styles/CopyToClipboard.css';
 
 type props = {
     generatedPw: string;
 }
 
 const CopyToClipboardBtn = ({generatedPw} : props) => {
-    const [msg, setMsg] = useState("");
+    const confirmation = useRef <HTMLParagraphElement>(null!);
     const copyTxt = () => {
         navigator.clipboard.writeText(generatedPw);
-        setMsg("copied.");
-        setTimeout(() => {setMsg("")}, 5000);
+        confirmation.current.style.display = "block";
+        setTimeout(() => { confirmation.current.style.display = "none";}, 3000);
     };
     return (
         <div className="copyToClipboardBtn">
-            <p className="copyConfirmation">{msg}</p>
+            <p ref={confirmation} className="copyConfirmation">Copied!</p>
             <button type="button" onClick={copyTxt}>Copy to Clipboard</button>
         </div>
     );

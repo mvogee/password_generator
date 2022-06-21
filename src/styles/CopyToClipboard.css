@@ -1,0 +1,9 @@
+.copyConfirmation {
+    margin: 0.8rem auto;
+    padding: 0.2rem 0.8rem;
+    display: none;
+    color: var(--dark-green);
+    background-color: var(--white-green);
+    width: fit-content;
+    border-radius: 3px;
+}
