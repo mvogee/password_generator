@@ -1,0 +1,13 @@
+.PwOptions-Container {
+    margin: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.PwOption-CheckBoxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.PwOption-CheckBoxes input {
+    margin: 0.5rem;
+}
