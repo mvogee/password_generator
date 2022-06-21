@@ -8,7 +8,7 @@ import PasswordDisplay from './components/PasswordDisplay';
 import './App.css';
 
 const App = () => {
-    let [generatedPw, setGeneratedPw] = useState("");
+    let [generatedPw, setGeneratedPw] = useState(createPw(false, true, true, 15));
     const includeNumbers = useRef(true);
     const includeSpecial = useRef(false);
     const includeUpperCase = useRef(true);
@@ -19,16 +19,17 @@ const App = () => {
     };
 
     return (
-    <div className="App">
+        <div className="App">
+            <h1>Password Generator</h1>
             <PasswordDisplay generatedPw={generatedPw}/>
             <CopyToClipboardBtn generatedPw={generatedPw}/>
+            <button className="generateBtn" type="button" onClick={generateBtn}>Generate New Password</button>
             <PwOptions
                 includeNumbers={includeNumbers}
                 includeSpecial={includeSpecial}
                 includeUpperCase={includeUpperCase}
             />
             <NumberSlider passwordLength={passwordLength} setPasswordLength={setPasswordLength} />
-            <button className="generateBtn" type="button" onClick={generateBtn}>Generate New Password</button>
         </div>
     );
 };

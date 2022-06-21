@@ -1,14 +1,18 @@
 .App {
   max-width: 95%;
-  margin: 5rem auto;
+  margin: 3rem auto;
   text-align: center;
+}
+h1 {
+  margin-bottom: 3rem;
+  color: var(--dark-green);
 }
 
 .generateBtn {
   border: 2px solid var(--mid-green);
   border-radius: 3px;
   background-color: var(--light-green);
-  margin: 1rem auto;
+  margin: 1.2rem auto;
   padding: 0.4rem 0.9rem;
 }
 
