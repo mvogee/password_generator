@@ -1,5 +1,15 @@
+:root {
+--background-color: white;
+--off-white: rgba(213, 231, 242, 1);
+--light-green: rgba(107, 175, 191, 1);
+--dark-green: rgba(50, 131, 140, 1);
+--mid-green: rgba(28, 140, 140, 1);
+--white-green: rgba(220, 242, 236, 1);
+}
+
 body {
-  margin: 0;
+  background-color: var(--background-color);
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

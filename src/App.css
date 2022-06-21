@@ -1,3 +1,13 @@
 .App {
+  max-width: 95%;
+  margin: 5rem auto;
   text-align: center;
+}
+
+.generateBtn {
+  border: 2px solid var(--mid-green);
+  border-radius: 3px;
+  background-color: var(--light-green);
+  margin: 1rem auto;
+  padding: 0.4rem 0.9rem;
 }

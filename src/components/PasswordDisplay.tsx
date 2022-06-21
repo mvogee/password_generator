@@ -1,3 +1,5 @@
+import '../styles/PasswordDisplay.css';
+
 type props = {
     generatedPw: string;
 };
